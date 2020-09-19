@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Star</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(img/adult-1850925_1920.jpg);
+            background-repeat: no-repeat;
+            background-position: -188px -49px;
+            height: fit-content;
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            left: 17px;
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+            margin: 20px 0;
+
+        }
+
+        .left div {
+            float: right;
+            margin: 15px;
+            font-size: 45px;
+            font-family: 'Permanent Marker', cursive;
+
+        }
+
+        .mid {
+            display: block;
+            margin: 44px 478px;
+            width: 50%;
+
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            font-size: 15px;
+
+            right: 20px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            box-sizing: border-box;
+            color: rgba(255, 255, 255, 0.404);
+
+
+        }
+
+        .btn {
+            margin: 19px 3px;
+            color: white;
+            background-color: black;
+            padding: 3px 4px;
+            border: 1px solid rgba(255, 255, 255, 0.253);
+            border-radius: 6px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        .btn:hover {
+            background-color: rgba(212, 199, 199, 0.308);
+        }
+
+        .container {
+            text-align: center;
+            margin: 560px 1000px 0 1000px;
+            width: 541px;
+            height: 150px;
+            font-size: 27px;
+            font-family: 'Permanent Marker', cursive;
+
+        }
+
+        .inp input {
+            margin: 7px;
+            border-radius: 10px;
+            padding: 8px 80px;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+
+
+
+        }
+        label{
+            cursor: pointer;
+        }
+        input::-webkit-input-placeholder{
+            opacity: 1;
+        }
+        #btn1 {
+            border: 3px solid black;
+            font-size: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Fitness Star</div>
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Register Now</h1>
+        <form action="noaction.php">
+            <div class="inp">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Your Phone number">
+
+            </div>
+            <div class="inp">
+                <input type="number" placeholder="Enter Your Weight">
+
+            </div>
+            <div class="inp">
+                <input type="date">
+            </div>
+            <div class="inp">
+                Gender : <input name="gender" type="radio" value="Male" id="mal"><label for="mal">Male</label>
+                <input type="radio" value="Female" name="gender" id="fem"><label for="fem">Female</label>
+            </div>
+            <button id="btn1" class="btn">Submit Here</button>
+
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
